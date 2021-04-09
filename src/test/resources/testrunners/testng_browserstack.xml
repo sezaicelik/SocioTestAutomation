@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="BrowserStack Test automtion regression suite"
+       thread-count="1" parallel="tests" verbose="1">
+
+
+    <test name="BrowserStack Test - Chrome">
+        <parameter name="os" value="Windows"/>
+        <parameter name="os_version" value="10"/>
+        <parameter name="browser" value="chrome"/>
+        <parameter name="browser_version" value="88.0"/>
+        <parameter name="browserstack.selenium_version" value="3.5.2"/>
+        <classes>
+            <class name="com.selenium.socio.tests.SocioTests"/>
+        </classes>
+
+    </test>
+
+</suite>
